@@ -108,15 +108,14 @@
                                                 <label><b>Descripción</b>:</label><br>
                                                 <p><?php echo $i['descripcion'] ?></p>
                                             </div>
-                                            <div class="text-start">
-                                                <h3 class="titulo p-2"><mark class="rounded-pill"><?php echo '$ '. number_format($i['precio']) ?></mark></h3>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> -->
-                                    <a href="agendarCita.php?servicio=<?php echo $i['servicio'] ?>&idusuario=<?php echo $i['nombre'].' '.$i['apellido'] ?>&sucursal=<?php echo $i['sucursal'] ?>" class="btn btn-primary">Agendar Cita</a>
+                                <div class="modal-footer d-flex justify-content-between">
+                                        <h3 class="titulo p-2"><mark class="rounded-pill"><?php echo '$ '. number_format($i['precio']) ?></mark></h3>
+                                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> -->
+                                        <a href="agendarCita.php?servicio=<?php echo $i['servicio'] ?>&idusuario=<?php echo $i['nombre'].' '.$i['apellido'] ?>&sucursal=<?php echo $i['sucursal'] ?>" class="btn btn-primary">Agendar Cita</a>
                                 </div>
                                 </div>
                             </div>

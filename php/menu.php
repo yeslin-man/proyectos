@@ -22,7 +22,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.26.24/dist/sweetalert2.min.css
     <!-- <label class="text-center titulo"></label> -->
 
     <div class="dropdown">
-      <a class="text-decoration-none titulo dropdown-toggle text-capitalize" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      <a class="text-decoration-none titulo dropdown-toggle textoHeader" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
         <b><?php echo $_SESSION['nombre'].' '.$_SESSION['apellido'] ?></b>
       </a>
 
@@ -31,7 +31,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.26.24/dist/sweetalert2.min.css
       </ul>
     </div>
 
-        <p class="titulo nombre_sucur text-capitalize"><?php echo $_SESSION['sucursal']; ?></p>
+        <p class="titulo nombre_sucur textoHeader"><?php echo $_SESSION['sucursal']; ?></p>
   </div>
 </header>
 

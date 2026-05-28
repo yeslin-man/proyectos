@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     eventClick:function(info){
         let datos = info.event.extendedProps;
-        document.getElementById('id_uno').value = info.event.id;
+        // document.getElementById('id_uno').value = info.event.id;
         document.getElementById('cliente_uno').value = info.event.title;
         document.getElementById('servicio_uno').value = datos.servicio;
         let fecha = info.event.start;

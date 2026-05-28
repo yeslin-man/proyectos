@@ -98,14 +98,12 @@
                     <form id="frmAgendaEditar">
                     <div class="mb-3">
                         <label for="cliente" class="col-form-label titulo">Cliente:</label>
-                        <input type="hidden" class="form-control campos" id="id_uno" name="id_cita" required>
+                        <!-- <input type="hidden" class="form-control campos" id="id_uno" name="id_cita" required> -->
                         <input type="text" class="form-control campos" id="cliente_uno" name="cliente" required>
                     </div>
                     <div class="mb-3">
                         <label for="servicio" class="col-form-label titulo">Servicios:</label>
-                        <select name="servicio" id="servicio_uno" class="form-control campos">
-                            <option value="Masaje">Masaje</option>
-                        </select>
+                        <input type="text" name="servicio" id="servicio_uno" class="form-control campos">
                     </div>
                     <div class="mb-3">
                         <label for="fecha" class="col-form-label titulo">Fecha</label>
@@ -124,7 +122,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btnRP" data-bs-dismiss="modal"><i class="fa-solid fa-x"></i> Cancelar</button>
-                        <button id="botonAg" class="botones"><i class="fa-solid fa-pen"></i> Editar</button>
+                        <button id="botonEd" class="botones"><i class="fa-solid fa-pen"></i> Editar</button>
                     </div>
                 </form>
                 </div>
@@ -144,5 +142,6 @@
     <!-- <script src="js/script.js"></script> -->
     <script src="js/dataTable.js"></script>
     <script src="js/guardarA.js"></script>
+    <script src="js/EditarCitasP.js"></script>
 </body>
 </html>
