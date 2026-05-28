@@ -1,6 +1,6 @@
 <?php
     session_start();
-    session_destroy();
+    
 
      require_once '../db/Conexion.php';
     $con = new Conexion();
@@ -10,5 +10,9 @@
     $stmt = $conectar->prepare($sql);
     $stmt->execute([$_SESSION['id_usuario']]);
 
+    session_destroy();
+
     header("location: ../login.php");
+
+    exit;
 ?>
