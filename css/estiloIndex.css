@@ -1,0 +1,216 @@
+:root{
+    --fuente-principal: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #ffd6e0);
+}
+
+.logo{
+    position: relative;
+    background-image: url(../img/1.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.avatar{
+    position: absolute;
+    top: 120px; /* Lo saca hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: black;
+    /* padding: 5px; */
+}
+
+.carta_boton{
+    color: white;
+    border-radius: 15px; 
+    border: 2px solid goldenrod;
+    transition: all 1s ease;
+    cursor: pointer;
+    background: pink
+}
+
+.carta_botonDos{
+    color: white;
+    border-radius: 15px; 
+    border: 2px solid goldenrod;
+    transition: all 1s ease;
+    cursor: pointer;
+    background: pink
+}
+
+
+
+/* .carta_boton:hover{
+    background: black;
+    color: #fff;
+    transition: all 1s ease;  
+} */
+
+.icono{
+    font-size: 23px;
+}
+
+.avatar, .imagen_logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.titulo{
+    font-family: var(--fuente-principal);
+}
+
+.titulos{
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    color: teal;
+}
+
+.parrafo{
+    color: gray;
+    font-family: var(--fuente-principal);
+}
+
+.campo {
+    width: 300px;
+    padding: 12px 15px;
+    background: #d9d9d9;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.campo{
+    /* Línea inferior como en la imagen */
+    border-bottom: 2px solid #bfbfbf;
+}
+
+/* Efecto al enfocar */
+.campo:focus {
+    background: #d1d1d1;
+    border-bottom: 2px solid #999;
+}
+
+.imagen_carrucel{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contenido{
+    margin: auto;
+    width: 98%;
+}
+
+.nombre_sucur{
+    text-align: center;
+}
+
+.targeta{
+    height: 500px;
+    border: 2px solid goldenrod;
+    
+}
+
+.cabezas{
+  background: rgb(255, 192, 203);  
+}
+
+.cuerpo{
+    background: rgba(255, 192, 203, 0.2);
+}
+
+.encabezado{
+    background: #DCDCDC;
+}
+
+.total{
+    font-size: 18px;
+}
+
+th{
+   font-family: var(--fuente-principal); 
+   font-weight: 700;
+   color: #333;
+}
+
+.mapa{
+    position: relative;
+}
+.acceso_mapa{
+    position: absolute;
+    width: 300px;
+}
+
+.logo_princi{
+    filter: drop-shadow(0 0 10px yellow);
+}
+
+.campos{
+    border: 2px solid goldenrod;
+}
+.campo_icono{
+    background: pink
+}
+.ladoUno{
+    color: goldenrod;
+    font-weight: 800;
+    font-size: 25px;
+}
+.ladoDos{
+    color: pink;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/* efecto focus */
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* boton registro */
+.btnR{
+    padding: 5px;
+    /* border: 2px solid goldenrod; */
+    border: none;
+    background: goldenrod;
+    border-radius: 30px;
+}
+.btnR:hover{
+    background: goldenrod;
+    color: white;
+}
+
+.opcion{
+    color: goldenrod;
+    font-weight: 700;
+}
+
+#mostrarDos, #mostrarTres{
+    display: none;
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    .mover{
+        margin-left: 160px;
+    }
+    .nombre_sucur{
+        text-align: start;
+    }
+ }
+
+/* Tablets */
+@media (max-width: 768px) { }

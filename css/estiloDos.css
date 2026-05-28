@@ -1,0 +1,563 @@
+:root{
+    --principal: #36D7D7;
+    --dorado: #C9A227;
+    --blanco: #FFFFFF;
+    --gris-claro: #F5F5F5;
+    --texto: #1E1E1E;
+
+    --rosa: #F8D7DA;
+    --rosa-fuerte: #E89CA8;
+    --dorado: #D4AF37;
+    --blanco: #FFFFFF;
+    --texto: #333333;
+}
+
+.panelP{
+    background: linear-gradient(to right, #ffb6c1, #ffffff);
+    /* background: var(--gris-claro); */
+    color: var(--texto);
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+.menuPrin{
+    position: absolute;
+    /* border: 1px solid #fffdfd; */
+    border-radius: 20px;
+    /* margin-top: 10px; */
+    box-shadow: 2px 2px 3px #000;
+    /* background: rgba(231, 129, 129, 0.7); */
+    background: rgba(255, 255, 255, 0.7);
+}
+nav{
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+nav ul{
+    width: 100%;
+    display: flex;
+}
+nav li{
+    margin-left: 12px;
+    list-style: none;
+    padding: 15px;
+    transition: all 1s;
+}
+li:hover{
+    background: rgba(221, 167, 32, 0.8);
+    color: white;
+    border-radius: 10px;
+    transition: all 1s;
+}
+/* nav a{ */
+.nav-link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.botonR{
+    width: 150px;
+    padding: 10px;
+    /* background: rgb(203, 92, 111); */
+    /* background: var(--rosa-fuerte); */
+    background: black;
+    color: white;
+    border: 2px solid pink;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* estilo del componente */
+
+.componente{
+    position: relative;
+    /* background-image: url('../img/logoSpa.png'); */
+    background-image: url('../img/spa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 90vh; */
+    height: 600px;
+    object-fit: cover;
+
+    image-rendering: -webkit-optimize-contrast;
+
+    /* border-end-end-radius: 100px; */
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+}
+/* .componente::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(242, 140, 140, 0.5); 
+} */
+
+.content{
+    width: 90%;
+    margin: auto;
+}
+
+.parrafo_ini{
+    margin-top: 70px;
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.parrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.PrimeraImg{
+    width: 580px;
+    margin-left: 15px;
+}
+.imagen_uno{
+    margin-left: 80%;
+}
+
+.marte{
+    /* width: 300px; */
+    width: 100%;
+
+}
+
+.link{
+    padding: 10px;
+    border: 2px solid #0000;
+    border-radius: 50px;
+}
+
+.pie_pagina{
+    background: gray;
+    color: #fff;
+    /* height: 52vh; */
+}
+.menuDos a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.iconos{
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre_pie{
+    background: #000;
+    height: 25px;
+    color: #fff;
+}
+
+.logotipo{
+    width: 400px;border-radius: 100%;
+}
+
+
+/* estilo de pie de pagina */
+
+.footer {
+    background: linear-gradient(135deg, #1e293b, #4c1d95);
+    /* background: linear-gradient(135deg, gray, gray); */
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.logo-footer {
+    width: 350px;
+}
+
+.titulo-footer {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.menu-footer {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-footer li {
+    margin: 8px 0;
+}
+
+.menu-footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-footer a:hover {
+    color: #ff0f6d;
+}
+
+.redes a img {
+    width: 35px;
+    margin: 0 8px;
+    transition: transform 0.3s;
+}
+
+.redes a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.info-footer {
+    color: #ddd;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.piePagina{
+    margin: auto;
+}
+
+/* boton flotante  */
+
+.floater{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 40px;
+    top: 80%;
+    background-color: rgb(85, 233, 44);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.my-float{
+    margin: 16px;
+}
+
+.slogan{
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#formulario{
+    display: none;
+}
+
+.titulo, .precio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.texto{
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* cantidad de líneas */
+    -webkit-box-orient: vertical;
+}
+
+/* paginador */
+
+.paginador {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.paginador a {
+    padding: 8px 12px;
+    background: pink;
+    text-decoration: none;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+.paginador a.activo {
+  background: hotpink;
+  color: white;
+}
+
+.mensaje{
+    width: 600px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 12%;
+    margin-left: 8%;
+}
+
+/* poner texto encima de imagen */
+.contenedor{
+    position: relative;
+    width: 100%;
+    
+}
+
+.contenedor img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 30px;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 30px;
+
+    background: rgba(0,0,0,0.2);
+}
+
+.montar{
+    position: absolute;
+    width: 95%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    /* background: rgba(0,0,0,0.4); */
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.capa:hover{
+    background: rgba(0,0,0,0.6);
+    transition: all 0.5s;
+}
+
+/* estilo de la tabla */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+thead, .formulario, tarjetaBu{
+    /* background: #0f2a44; */
+    background: linear-gradient(to right, #ef8191, #bdbbbb);
+    color: white;
+}
+
+thead th{
+    padding: 15px;
+    font-size: 16px;
+}
+
+tbody td{
+    padding: 14px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #333;
+}
+
+tbody tr:hover{
+    background: #EAFDFC;
+    /* background: lightpink; */
+    transition: 0.3s;
+}
+
+.operar{
+    background: #C9A227;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.filtro{
+  display: none;
+}
+
+.buscar_s{
+    border-color: #000 !important;
+}
+
+.buscar_s:focus{
+    height: 50px;
+    /* border: 2px solid #000; */
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #000 !important;
+
+}
+
+.sucursal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+.sucursal:hover{
+    background: lightgray;
+    border-radius: 20px;
+}
+
+
+/* estilo de formulario */
+.contenedorX{
+    width: 600px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.2);
+    animation: aparecer 1s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenedorX h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d63384;
+    font-size: 32px;
+}
+
+.grupo{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.grupo input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.7);
+    font-size: 16px;
+    transition: 0.3s;
+}
+.grupo select{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.7);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.grupo input:focus{
+    background: white;
+    box-shadow: 0px 0px 15px rgba(214,51,132,0.4);
+    transform: scale(1.03);
+}
+
+.grupo label{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #777;
+    pointer-events: none;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.grupo input:focus + label,
+.grupo input:valid + label,
+.grupo input[type="date"] + label,
+.grupo input[readonly] + label{
+    top: -10px;
+    left: 10px;
+    font-size: 13px;
+    color: #d63384;
+    background: white;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+/* .grupo input:focus + label,
+.grupo input:valid + label{
+    top: -10px;
+    left: 10px;
+    font-size: 13px;
+    color: #d63384;
+    background: white;
+    padding: 0 5px;
+    border-radius: 5px;
+} */
+
+.botonCita{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff69b4, #d63384);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.botonCita:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(214,51,132,0.5);
+}
+
+
+@media (max-width: 576px) {
+    .mensaje{
+        width: 300px;
+        font-size: 22px;
+        margin-top: 20%;
+    }
+
+    .PrimeraImg{
+        width: 400px;
+        /* margin-left: 15px; */
+    }
+    .imagen_uno{
+        margin-left: 0;
+    }
+
+}
