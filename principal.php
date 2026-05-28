@@ -17,6 +17,7 @@
       include 'php/menu.php'; 
       include 'model/Agendas.php';
       include 'model/Usuarios.php';
+      include 'model/usuariosActivo.php';
     ?>
 
         <div class="contener">
@@ -69,7 +70,7 @@
         'sahagun' => 0
       ];
 
-      foreach($usuarios as $i){
+      foreach($usuariosB as $i){
           $sucursal = strtolower(trim($i['sucursal']));
 
           if($i['estado'] == 1 && isset($estados[$sucursal])){
