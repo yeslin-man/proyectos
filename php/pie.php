@@ -65,6 +65,23 @@
 </footer>
 
 
+<script>
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.href;
+
+        if (href && !href.includes('#')) {
+            e.preventDefault();
+
+            document.body.classList.add('fade-out');
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500);
+        }
+    });
+});
+</script>
 
 
 

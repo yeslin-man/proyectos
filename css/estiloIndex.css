@@ -198,7 +198,10 @@ th{
     font-weight: 700;
 }
 
-#mostrarDos, #mostrarTres{
+#mostrarDos{
+    display: none;
+}
+#mostrarTres{
     display: none;
 }
 

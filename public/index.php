@@ -60,25 +60,34 @@
             </div>
         </div>
         <div class="row mb-5">
-            <h3 class="titulo mb-4 mt-2"><i class="fa-solid fa-leaf"></i> <b>Servivios</b></h3>
+            <h3 class="titulo mb-4 mt-2"><i class="fa-solid fa-leaf"></i> <b>Nuestros Servivios</b></h3>
             <?php 
                 include '../model/ServiciosTres.php';
                 foreach($usuarios as $i){ 
             ?>
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="mb-3">
-                    <!-- <div class="card-header">
-                        </div> -->
-                    <div class="contenedor" type="button" data-bs-toggle="modal" data-bs-target="#ver<?php echo $i['id_servicio'] ?>" data-bs-whatever="@getbootstrap">
+
+                    <div class="contenedor shadow-lg rounded" data-bs-toggle="modal" data-bs-target="#ver<?php echo $i['id_servicio'] ?>" data-bs-whatever="@getbootstrap">
                         
                         <img src="../img/<?php echo $i['foto'] ?>" class="marte" alt="">
+
+                        <div class="card-body p-2">
+                            <h3 class="titulo text-center"><?php echo $i['servicio'] ?></h3>
+                            <hr>
+                            <p class="parrafoC"><?php echo $i['descripcion'] ?></p>
+                        </div>
+                        
+                        
+
+                        <!-- <img src="../img/<?php //echo $i['foto'] ?>" class="marte" alt="">
 
                         <div class="capa"></div>
 
                         <div class="montar">
-                            <h3 class="titulo"><?php echo $i['servicio'] ?></h3>
-                            <!-- <h4  class=" text-center precio"><b><?php //echo '$ '. number_format($i['precio']) ?></b></h4> -->
-                        </div>
+                            <h3 class="titulo"><?php //echo $i['servicio'] ?></h3>
+                            
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -127,35 +136,41 @@
         </div>
         <div class="row">
             <div class="col-md-6">
+                <br><br><br>
                 <img src="../img/logoSpa.png" class="PrimeraImg" alt="">
             </div>
             <div class="col-md-6">
-                <div class="card shadow-lg p-1 mb-5 bg-body rounded">
-                    <div class="card-header text-center"><h3 class="titulo">Deja tu mensaje</h3></div>
-                    <div class="card-body">
-                        <form action="" method="post">
-                            <div class="form-group mb-3">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" class="form-control" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="correo">Correo electronico</label>
-                                <input type="Email" name="correo" class="form-control" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="telefono">Telefono</label>
-                                <input type="number" name="telefono" class="form-control" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea name="mensaje" id="" class="form-control"></textarea>
-                            </div>
-                            <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-primary">Enviar</button>
-                            </div>
-                        </form>
+                
+                <form action="" method="post" class="form-contacto">
+                    <h3 class="titulo-formulario">Contáctanos</h3>
+
+                    <div class="form-group mb-3">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" class="form-control campo" placeholder="Ingrese su nombre" required>
                     </div>
-                </div>
+
+                    <div class="form-group mb-3">
+                        <label>Correo electrónico</label>
+                        <input type="email" name="correo" class="form-control campo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono" class="form-control campo" placeholder="3001234567" required>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="5" class="form-control campo" placeholder="Escriba su mensaje"></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn-enviar">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+                    
             </div>
         </div>
     </div>
