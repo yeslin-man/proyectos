@@ -74,10 +74,10 @@
                             </div>
                             <div class="d-flex">
                                 <div class="col-md-6">
-                                    <h3 class="text-end"><i class="fa-brands fa-facebook text-primary"></i></h3>
+                                    <h3 class="text-end"><a href="https://www.facebook.com/share/1d22ufLPe3/" target="_blank" rel="noopener noreferrer"></a><i class="fa-brands fa-facebook text-primary"></i></h3>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="text-start"><i class="fa-brands fa-instagram text-danger"></i></h3>
+                                    <h3 class="text-start"><a href="https://www.instagram.com/karime_spa?igsh=MXYxMjc1ZXQwaDhrYQ==" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"></i></a></h3>
                                 </div>
                             </div>
                         </div>

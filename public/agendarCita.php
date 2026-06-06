@@ -31,7 +31,7 @@
                     <!-- <div class="card-body"> -->
                         <form class="contenedorX" id="frmAgendaC">
 
-                            <h2>Formulario de citas</h2>
+                            <h2><a href="servicios.php?accion=Servicios" class="text-decoration-none" title="Ir a servicios">⬅</a> Formulario de citas</h2>
 
                             <div class="grupo">
                                 <input type="text" name="cliente" id="cliente" required>

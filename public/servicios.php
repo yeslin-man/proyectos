@@ -24,7 +24,7 @@
 <br>
     <div class="content">
         <div class="row p-1 mb-5">
-            <h3 class="titulo mb-4 mt-2"><i class="fa-solid fa-leaf"></i> <b>Servivios</b></h3>
+            <h3 class="titulo mb-4 mt-2"><i class="fa-solid fa-leaf"></i> <b><?php if($_REQUEST['accion']=='Reservar'){echo 'Reservar Cita';}else{echo 'Servicios';} ?></b></h3>
             <div class="col-md-3 mb-3">
                 <div class="mt-3 sticky-top shadow-lg p-3 mb-5 rounded tarjetaBu">
                     <div class="text-center ">
@@ -74,13 +74,13 @@
                         <div class="mb-3">
                             <div class="contenedor" type="button" data-bs-toggle="modal" data-bs-target="#ver<?php echo $i['id_servicio'] ?>" data-bs-whatever="@getbootstrap">
                                 
-                                <img src="../img/<?php echo $i['foto'] ?>" class="marte" alt="">
+                                <img src="../img/<?php echo $i['foto'] ?>" class="marte imagen_marte" alt="">
         
                                 <div class="capa"></div>
         
                                 <div class="montar">
                                     <h3 class="titulo"><?php echo $i['servicio'] ?></h3>
-                                    <h4  class=" text-center precio"><b><?php echo '$ '. number_format($i['precio']) ?></b></h4>
+                                    <h4  class=" text-center precio"><b><?php echo '$ '. number_format($i['precio']) ?> COP</b></h4>
                                 </div>
                                 <!-- <p class="text-secondary texto">
                                     <?php //echo $i['descripcion'] ?>
@@ -95,25 +95,26 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title text-capitalize" id="exampleModalLabel"><?php echo $i['servicio'] ?></h5>
+                                    <h5 class="modal-title text-capitalize" id="exampleModalLabel"><b>Sucursal:</b> <?php echo $i['sucursal'] ?></h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img src="../img/<?php echo $i['foto'] ?>" class="marte" alt="">
+                                            <img src="../img/<?php echo $i['foto'] ?>" class="marte imagen_marte" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="mt-3 mb-2">
-                                                <label><b>Descripción</b>:</label><br>
-                                                <p><?php echo $i['descripcion'] ?></p>
+                                                <h5 class="text-capitalize texto_producto"><?php echo $i['servicio'] ?></h5>
+                                                <!-- <label><b>Descripción</b>:</label><br> -->
+                                                <p class="titulo_producto"><?php echo $i['descripcion'] ?></p>
                                             </div>
                                             
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer d-flex justify-content-between">
-                                        <h3 class="titulo p-2"><mark class="rounded-pill"><?php echo '$ '. number_format($i['precio']) ?></mark></h3>
+                                        <h3 class="titulo p-2"><mark class="rounded-pill"><?php echo '$ '. number_format($i['precio']) ?> COP</mark></h3>
                                         <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> -->
                                         <a href="agendarCita.php?servicio=<?php echo $i['servicio'] ?>&idusuario=<?php echo $i['nombre'].' '.$i['apellido'] ?>&sucursal=<?php echo $i['sucursal'] ?>" class="btn btn-primary">Agendar Cita</a>
                                 </div>

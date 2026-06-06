@@ -66,6 +66,17 @@
 
 
 <script>
+
+// Al cargar la página
+window.addEventListener('pageshow', () => {
+    document.body.classList.remove('fade-in');
+});
+
+// Al salir de la página
+window.addEventListener('beforeunload', () => {
+    document.body.classList.add('fade-out');
+});
+
 document.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', function(e) {
         const href = this.href;

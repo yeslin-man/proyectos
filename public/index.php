@@ -77,17 +77,6 @@
                             <hr>
                             <p class="parrafoC"><?php echo $i['descripcion'] ?></p>
                         </div>
-                        
-                        
-
-                        <!-- <img src="../img/<?php //echo $i['foto'] ?>" class="marte" alt="">
-
-                        <div class="capa"></div>
-
-                        <div class="montar">
-                            <h3 class="titulo"><?php //echo $i['servicio'] ?></h3>
-                            
-                        </div> -->
                     </div>
                 </div>
             </div>

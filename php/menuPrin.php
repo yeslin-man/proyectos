@@ -16,7 +16,7 @@
           <a class="nav-link" aria-current="page" href="somos.php"><i class="fa-solid fa-users"></i> ¿Quiénes Somos?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="servicios.php"><i class="fa-solid fa-bell-concierge"></i> Servicios</a>
+          <a class="nav-link" href="servicios.php?accion=Servicios"><i class="fa-solid fa-bell-concierge"></i> Servicios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="cita.php"><i class="fa-solid fa-calendar"></i> Cita</a>
@@ -36,7 +36,7 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> -->
       </ul>
-      <a href="" class="botonR mb-3">Agendar Cita</a>
+      <a href="servicios.php?accion=Reservar" class="botonR mb-3">Reservar Cita</a>
     </div>
   </div>
 </nav>
