@@ -41,7 +41,7 @@
                                 foreach($usuarios as $i){ 
                                 if(!in_array($i['sucursal'], $sucursalesMostradas)){
                             ?>
-                                <a href="" data-id="<?php echo $i['id_servicio'] ?>" data-sucursal="<?php echo $i['sucursal'] ?>" class="mb-3 mt-3 sucursal text-decoration-none filtroSucursal"><?php echo $i['sucursal'] ?></a><br>
+                                <a href=""  data-id="<?php echo $i['id_servicio'] ?>" data-sucursal="<?php echo $i['sucursal'] ?>" class="mb-3 mt-3 sucursal text-decoration-none text-dark filtroSucursal"><?php echo $i['sucursal'] ?></a><br>
                             <?php 
                                     $sucursalesMostradas[] = $i['sucursal'];
                                     }
@@ -54,7 +54,7 @@
                                 Tipos de Servicios  
                             </summary>
                             <?php foreach($usuarios as $i){ ?>
-                                <a href="" data-id="<?php echo $i['id_servicio'] ?>" data-sucursal="<?php echo $i['sucursal'] ?>" data-servicio="<?php echo $i['servicio'] ?>" class="mt-3 sucursal text-decoration-none filtroServicio"><?php echo $i['servicio'] ?></a><br>
+                                <a href=""  data-id="<?php echo $i['id_servicio'] ?>" data-sucursal="<?php echo $i['sucursal'] ?>" data-servicio="<?php echo $i['servicio'] ?>" class="mt-3 sucursal text-decoration-none text-dark filtroServicio"><?php echo $i['servicio'] ?></a><br>
                             <?php } ?>
                         </details>
                     </div>

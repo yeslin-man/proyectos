@@ -12,8 +12,13 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i> Inicio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="somos.php"><i class="fa-solid fa-users"></i> ¿Quiénes Somos?</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users"></i> Sucursales</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Apartadó</a></li>
+              <li><a class="dropdown-item" href="#">Magangé</a></li>
+              <li><a class="dropdown-item" href="#">Sahagún</a></li>
+            </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="servicios.php?accion=Servicios"><i class="fa-solid fa-bell-concierge"></i> Servicios</a>

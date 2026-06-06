@@ -18,7 +18,7 @@
     <?php include '../php/menuPrin.php'; ?>
 
     <h4 class="mensaje">
-        Karime Spa <br>
+        <span class="mensajes">Karime Spa</span> <br>
         Un espacio creado para renovar tu cuerpo, relajar tu mente y <br> consentir tu bienestar.
     </h4>
     </div>
@@ -117,11 +117,22 @@
             <?php } ?>
         </div>
         <div class="testimonio mb-5 p-2">
-            <h3 class="titulo text-center "><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
-            <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-            </p>
+            <h3 class="titulo text-center"><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">

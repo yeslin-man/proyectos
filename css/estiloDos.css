@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
+
 :root{
     --principal: #36D7D7;
     --dorado: #C9A227;
@@ -17,9 +20,12 @@
     transition: all 1.5s;
 } */
 
+
 body{
     opacity: 1;
     transition: opacity 0.5s ease;
+    overflow-x: hidden;
+    
 }
 
 body.fade-out{
@@ -36,10 +42,10 @@ body.fade-in{
     color: var(--texto);
 }
 
-body{
+/* body{
     overflow-x: hidden;
     
-}
+} */
 
 .menuPrin{
     position: absolute;
@@ -64,7 +70,7 @@ nav li{
     padding: 15px;
     transition: all 1s;
 }
-li:hover{
+.nav-item:hover{
     background: rgba(221, 167, 32, 0.8);
     color: white;
     border-radius: 10px;
@@ -339,6 +345,12 @@ li:hover{
     margin-left: 8%;
 }
 
+.mensajes{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+}
+
 /* poner texto encima de imagen */
 .contenedor{
     position: relative;
@@ -442,6 +454,7 @@ tbody tr:hover{
 
 .buscar_s{
     border-color: #000 !important;
+    z-index: 999;
 }
 
 .buscar_s:focus{
@@ -455,7 +468,7 @@ tbody tr:hover{
 
 .sucursal{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
     width: 100%;
     padding: 8px;
@@ -463,7 +476,7 @@ tbody tr:hover{
 }
 .sucursal:hover{
     background: lightgray;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 
@@ -698,7 +711,7 @@ tbody tr:hover{
     width: 100%;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Número de líneas */
+    -webkit-line-clamp: 2; /* Número de líneas */
     -webkit-box-orient: vertical;
 
     font-family: Arial, Helvetica, sans-serif;
