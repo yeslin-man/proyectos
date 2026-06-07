@@ -15,9 +15,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-store"></i> Sucursales</a>
             <ul class="dropdown-menu menu_desple" aria-labelledby="navbarDropdown">
-              <li class="menu_desple_dos"><a class="dropdown-item" href="#">Apartadó</a></li>
-              <li class="menu_desple_dos"><a class="dropdown-item" href="#">Magangé</a></li>
-              <li class="menu_desple_dos"><a class="dropdown-item" href="#">Sahagún</a></li>
+              <li class="menu_desple_dos"><a class="dropdown-item" href="sucursales.php?accion=Apartadó">Apartadó</a></li>
+              <li class="menu_desple_dos"><a class="dropdown-item" href="sucursales.php?accion=Magangué">Magangué</a></li>
+              <li class="menu_desple_dos"><a class="dropdown-item" href="sucursales.php?accion=Sahagún">Sahagún</a></li>
             </ul>
         </li>
         <li class="nav-item">
