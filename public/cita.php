@@ -24,7 +24,7 @@
 
     <div class="content">
         <div class="row p-2 mb-3">
-            <h3 class="titulo mb-4 mt-2"><b>Buca tu Cita</b></h3>
+            <h3 class="titulo mb-4 mt-2"><b>Busca tu Cita</b></h3>
             <div class="col-md-12">
                 <div class="card shadow-lg p-1 mb-5 bg-body rounded">
                     <form action="" method="post" autocomplete="off">

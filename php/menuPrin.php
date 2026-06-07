@@ -1,8 +1,8 @@
-<div class="container">
+<div class=" menu_afuera">
     <nav class="navbar navbar-expand-lg navbar-light menuPrin">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-        <img src="../img/logoSpa.png" alt="" width="100" class="logoPrinci">
+        <img src="../img/logoSpa.png" alt="" width="120" class="logoPrinci">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,11 +13,11 @@
           <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i> Inicio</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users"></i> Sucursales</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Apartadó</a></li>
-              <li><a class="dropdown-item" href="#">Magangé</a></li>
-              <li><a class="dropdown-item" href="#">Sahagún</a></li>
+          <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-store"></i> Sucursales</a>
+            <ul class="dropdown-menu menu_desple" aria-labelledby="navbarDropdown">
+              <li class="menu_desple_dos"><a class="dropdown-item" href="#">Apartadó</a></li>
+              <li class="menu_desple_dos"><a class="dropdown-item" href="#">Magangé</a></li>
+              <li class="menu_desple_dos"><a class="dropdown-item" href="#">Sahagún</a></li>
             </ul>
         </li>
         <li class="nav-item">

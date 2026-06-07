@@ -13,14 +13,17 @@
 </head>
 <body class="panelP">
 
+    <?php include '../php/menuPrin.php'; ?>
     <div class="componente">
         
-    <?php include '../php/menuPrin.php'; ?>
+        <div class="overlay"></div>
 
-    <h4 class="mensaje">
-        <span class="mensajes">Karime Spa</span> <br>
-        Un espacio creado para renovar tu cuerpo, relajar tu mente y <br> consentir tu bienestar.
-    </h4>
+        <h4 class="mensaje">
+            <span class="mensajes">Karime Spa</span> <br>
+            <p class="alargar">Un espacio creado para renovar tu cuerpo, relajar tu mente y
+            consentir tu bienestar.</p>
+        </h4>
+
     </div>
 
 <!-- contenido -->
@@ -65,21 +68,54 @@
                 include '../model/ServiciosTres.php';
                 foreach($usuarios as $i){ 
             ?>
-            <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="mb-4">
+
+                        <div class="contenedor servicio-card"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ver<?php echo $i['id_servicio'] ?>"
+                            data-bs-whatever="@getbootstrap">
+
+                            <div class="imagen-servicio">
+                                <img src="../img/<?php echo $i['foto'] ?>" class="marte" alt="">
+                            </div>
+
+                            <div class="card-body">
+                                <h3 class="titulo_servicio mt-3">
+                                    <?php echo $i['servicio'] ?>
+                                </h3>
+
+                                <p class="parrafoC">
+                                    <?php echo $i['descripcion'] ?>
+                                </p>
+
+                                <span class="btn-servicio">
+                                    Ver Más →
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            <!-- <div class="col-6 col-md-4 col-lg-3">
                 <div class="mb-3">
 
-                    <div class="contenedor shadow-lg rounded" data-bs-toggle="modal" data-bs-target="#ver<?php echo $i['id_servicio'] ?>" data-bs-whatever="@getbootstrap">
+                    <div class="contenedor shadow-lg rounded" data-bs-toggle="modal" data-bs-target="#ver<?php //echo $i['id_servicio'] ?>" data-bs-whatever="@getbootstrap">
                         
-                        <img src="../img/<?php echo $i['foto'] ?>" class="marte" alt="">
+                        <img src="../img/<?php //echo $i['foto'] ?>" class="marte" alt="">
 
                         <div class="card-body p-2">
-                            <h3 class="titulo text-center"><?php echo $i['servicio'] ?></h3>
+                            <h3 class="titulo text-center titulo_servicio"><?php //echo $i['servicio'] ?></h3>
                             <hr>
-                            <p class="parrafoC"><?php echo $i['descripcion'] ?></p>
+                            <p class="parrafoC"><?php //echo $i['descripcion'] ?></p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- modal -->
 
