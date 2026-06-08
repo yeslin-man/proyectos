@@ -29,21 +29,41 @@
                 <hr>
                 <br>
                 <div class="d-flex justify-content-center">
-                    <img src="../img/logoSpa.png" alt="">
+                    <?php if($_REQUEST['accion']=='Sahagún'){ ?>
+                        <img src="../img/spa5.png" width="1200" height="800" class="shadow-lg bg-body rounded" alt="">
+                    
+                    <?php }else if($_REQUEST['accion']=='Magangué'){ ?>
+                        <img src="../img/magangue.webp" width="1200" height="800" class="shadow-lg bg-body rounded" alt="">
+                    
+                    <?php }else if($_REQUEST['accion']=='Apartadó'){ ?>
+                        <img src="../img/spaApar.jpg" width="1200" height="800" class="shadow-lg bg-body rounded" alt="">
+
+                    <?php } ?>
                 </div>
         </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="../img/logoSpa.png" width="700" alt="">
-                </div>
-                <div class="col-md-6">
-                    <img src="../img/logoSpa.png" width="700" alt="">
-                </div>
-            </div>
-            <p class="parrafo">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis placeat doloribus eius adipisci sequi non! Vel illum, doloribus magni sequi quisquam labore tempore molestias mollitia. Sed recusandae iusto non facere!
-                Assumenda quae error doloribus velit minus suscipit maiores deserunt corporis eum consequuntur! Pariatur, ex reiciendis qui deserunt eum nobis fugit recusandae velit aut. Totam enim quia fugit doloremque laborum atque!
-                Voluptate rem distinctio ipsum mollitia velit deserunt dolorum laboriosam ipsam id. Omnis enim ipsam nemo maiores soluta quis, fugiat qui nostrum, eum totam obcaecati in ex vitae optio doloremque voluptatum!
+        <!-- <br> -->
+            
+            <br>
+            <p class="parragrafo">
+                Permítete vivir una experiencia de relajación, renovación y armonía.
+                <br>
+                <b>Karime Spa -- sede <?php echo $_REQUEST['accion'] ?>:</b> donde la tranquilidad, la belleza y el bienestar se encuentran. Vive una experiencia única de relajación y renovación diseñada especialmente para ti.    
+            </p>
+            <br>
+            <p class="parragrafo">
+                <?php if($_REQUEST['accion']=='Sahagún'){ ?>
+                    <b>Direccion: Calle 15 A via la union</b>
+                        Estamos ubicados cerca de la vía Sahagún – La Unión, en el sector oriental del casco urbano, cerca de lugares como:
+                        Universidad de Córdoba sede Sahagún
+                        Club La Nevada
+                        Ministerio Internacional Profético Monte Sinaí
+                <?php }else if($_REQUEST['accion']=='Magangué'){ ?>
+                    <b>Direccion: Cl. 16 #11-133, Magangué, Bolívar, Colombia.</b>
+                    estamos ubicados cerca a el restaurante el <b>patio de elena.</b>                    
+                <?php }else if($_REQUEST['accion']=='Apartadó'){ ?>
+                    <b>Direccion: Cl. 97 #106-18</b>
+                    Estamos ubicados en el barrio nuevo apartadó cerca del establecimiento <b>parrilla del gallo</b>
+                <?php } ?>
             </p>
 
             <div class="card shadow p-3 mb-5 bg-body rounded">

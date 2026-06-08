@@ -27,7 +27,7 @@
                                     <div class="shadow-lg p-3 rounded carta_boton botonLogin" data-valor="magangué">
                                         <div class="d-flex">
                                             <span class="icono"><span><i class="fa-solid fa-house"></i></span></span>
-                                            <h5 class="text-center mx-3 mt-1 titulos">Sucursal Magangué</h5>
+                                            <h5 class="text-center mx-3 mt-1 titulos">Sede Magangué</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@
                                     <div class="shadow-lg p-3 rounded carta_boton botonLogin" data-valor="apartadó">
                                         <div class="d-flex">
                                             <span class="icono"><span><i class="fa-solid fa-house"></i></span></span>
-                                            <h5 class="text-center mx-3 mt-1 titulos">Sucursal Apartadó</h5>
+                                            <h5 class="text-center mx-3 mt-1 titulos">Sede Apartadó</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                                     <div class="shadow-lg p-3 rounded carta_boton botonLogin" data-valor="sahagún">
                                         <div class="d-flex">
                                             <span class="icono"><span><i class="fa-solid fa-house"></i></span></span>
-                                            <h5 class="text-center mx-3 mt-1 titulos">Sucursal Sahagún</h5>
+                                            <h5 class="text-center mx-3 mt-1 titulos">Sede Sahagún</h5>
                                         </div>
                                     </div>
                                 </div>
