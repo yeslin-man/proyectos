@@ -30,7 +30,8 @@
                     </div>
                     <div class="card-body p-3">
                         <div class="mt-3">
-                            <form action="controller/Usuario.php" method="POST">
+                            <!-- <form action="controller/Usuario.php" method="POST"> -->
+                            <form id="frmSpa">
                                 <div class="form-group mb-3">
                                     <div class="col-md-12">
                                         <label for="nombre" class="titulo">Nombre <span class="text-danger">*</span></label>
@@ -73,7 +74,8 @@
                                     </div>
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button type="submit" class="btnR" name="operacion" value="GuardarUsuario">Registrar</button>
+                                    <button type="submit" class="btnR" id="botonD">Registrar</button>
+                                    <!-- <button type="submit" class="btnR" id="botonD" name="operacion" value="GuardarUsuarioDos">Registrar</button> -->
                                     <!-- <button type="submit" class="btn btn-outline-warning">Registrar</button> -->
                                 </div>
                             </form>
@@ -92,5 +94,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/guardarD.js"></script>
 </body>
 </html>
