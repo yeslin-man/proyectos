@@ -30,11 +30,11 @@
                     </div>
                     <div class="card-body p-3">
                         <div class="mt-3">
-                            <form action="#" method="POST">
+                            <form action="controller/Usuario.php" method="POST">
                                 <div class="form-group mb-3">
                                     <div class="col-md-12">
                                         <label for="nombre" class="titulo">Nombre <span class="text-danger">*</span></label>
-                                        <input type="hidden" name="sucursal" id="sucursal" class="form-control campo" value="">
+                                        <input type="text" name="sucursal" id="sucursal" class="form-control campo" value="<?php echo $_REQUEST['valor'] ?>">
                                         <div class="input-group campos">
                                             <input type="text" name="nombre" id="nombre" class="form-control campos" required>
                                         </div>
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button type="submit" class="btnR">Registrar</button>
+                                    <button type="submit" class="btnR" name="operacion" value="GuardarUsuario">Registrar</button>
                                     <!-- <button type="submit" class="btn btn-outline-warning">Registrar</button> -->
                                 </div>
                             </form>

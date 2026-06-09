@@ -5,7 +5,7 @@ $con = new Conexion();
 $conectar = $con->conectar();
 
 // 📌 Cantidad de registros por página
-$registros_por_pagina = 8;
+$registros_por_pagina = 4;
 
 // 📌 Página actual
 $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;

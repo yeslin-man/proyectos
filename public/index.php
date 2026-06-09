@@ -156,18 +156,24 @@
             <h3 class="titulo text-center"><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
             <br>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
                     <p class="text-center">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
                     </p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-                    </p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="row">
