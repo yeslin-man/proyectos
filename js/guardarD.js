@@ -39,7 +39,7 @@ botonU.addEventListener('click', function(e){
         if(data === 'ok'){
             Swal.fire({
                 title: "Exitoso",
-                text: "Datos Guardados",
+                text: "Usuario Registrado",
                 icon: "success"
               }).then((result) => {
                 if (result.isConfirmed) {

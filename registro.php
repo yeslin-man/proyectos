@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/estiloIndex.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- swalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.min.css" rel="stylesheet">
+
+
     <link rel="icon" href="img/logoSpa.png" sizes="32x32">
     <title>Karime Spa - Registro</title>
 </head>
@@ -35,7 +40,7 @@
                                 <div class="form-group mb-3">
                                     <div class="col-md-12">
                                         <label for="nombre" class="titulo">Nombre <span class="text-danger">*</span></label>
-                                        <input type="text" name="sucursal" id="sucursal" class="form-control campo" value="<?php echo $_REQUEST['valor'] ?>">
+                                        <input type="hidden" name="sucursal" id="sucursal" class="form-control campo" value="<?php echo $_REQUEST['valor'] ?>">
                                         <div class="input-group campos">
                                             <input type="text" name="nombre" id="nombre" class="form-control campos" required>
                                         </div>
