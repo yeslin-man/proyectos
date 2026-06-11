@@ -90,7 +90,7 @@
                             <input type="hidden" name="opcion" id="opcion" value="<?php echo $_REQUEST['operacion'] ?>" required>
                             <?php if(isset($_REQUEST['operacion']) && $_REQUEST['operacion'] == 'testimonio'){ ?>
                             <div class="grupo">
-                                <input type="text" name="titulo" id="titulo" value="null">
+                                <input type="hidden" name="titulo" id="titulo" value="null">
                             </div>
                             <?php }else{ ?>
                             <div class="grupo">

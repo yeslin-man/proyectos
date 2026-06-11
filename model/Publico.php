@@ -5,7 +5,7 @@ include '../db/Conexion.php';
 $con = new Conexion();
 $conectar = $con->conectar();
 
-$evento = "SELECT * FROM publicaciones WHERE opcion = 'evento' LIMIT 1";
+$evento = "SELECT * FROM publicaciones WHERE opcion = 'evento' ORDER BY id_publi DESC LIMIT 1 ";
 $eventoR = $conectar->prepare($evento);
 $eventoR->execute();
 $agendasR = $eventoR->fetch(PDO::FETCH_ASSOC);
