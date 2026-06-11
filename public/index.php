@@ -13,7 +13,9 @@
 </head>
 <body class="panelP">
 
-    <?php include '../php/menuPrin.php'; ?>
+    <?php include '../php/menuPrin.php'; 
+        include '../model/Publico.php';
+    ?>
     <div class="componente">
         
         <div class="overlay"></div>
@@ -29,36 +31,34 @@
 <!-- contenido -->
 
     <div class="content">
-        <div class="row p-4 mt-4 mb-4">
+        <div class="row p-4 mt-4 mb-4 animar">
             <div class="col-md-4">
                 <div class="parrafo_ini">
-                    <h3 class="titulo"><b><i class="fa-solid fa-leaf"></i> Nombre Evento</b></h3>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi accusamus iure eum delectus amet molestiae commodi facere explicabo alias? Excepturi, expedita repudiandae a quis odio suscipit recusandae ut natus!</p>
+                    <h3 class="titulo"><b><i class="fa-solid fa-leaf"></i> <?php echo $agendasR['titulo'] ?></b></h3>
+                    <p class="parrafo"><?php echo $agendasR['descripcion'] ?></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="../img/logoSpa.png" class="PrimeraImg" alt="">
+                        <img src="<?php echo $agendasR['foto'] ?>" class="PrimeraImg" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="../img/logoSpa.png" class="PrimeraImg imagen_uno" alt="">
+                        <img src="<?php echo $agendasR['foto'] ?>" class="PrimeraImg imagen_uno" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row animar">
             <div class="col-md-6 mb-5 d-flex justify-content-center">
-                <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                    <img src="../img/logoSpa.png" class="PrimeraImg" alt="">
+                <div class="">
+                    <img src="<?php echo $spaK['foto'] ?>" class="PrimeraImgR circular shadow-lg bg-body" alt="">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="">
-                    <h3 class="titulo mb-2"><i class="fa-solid fa-leaf"></i> <b>Karime Spa</b></h3>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi accusamus iure eum delectus amet molestiae commodi facere explicabo alias? Excepturi, expedita repudiandae a quis odio suscipit recusandae ut natus!</p>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi accusamus iure eum delectus amet molestiae commodi facere explicabo alias? Excepturi, expedita repudiandae a quis odio suscipit recusandae ut natus!</p>
-                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi accusamus iure eum delectus amet molestiae commodi facere explicabo alias? Excepturi, expedita repudiandae a quis odio suscipit recusandae ut natus!</p>
+                    <h3 class="titulo mb-2"><i class="fa-solid fa-leaf"></i> <b><?php echo $spaK['titulo'] ?></b></h3>
+                    <p class="parrafo"><?php echo $spaK['descripcion'] ?></p>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                 include '../model/ServiciosTres.php';
                 foreach($usuarios as $i){ 
             ?>
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3 animar">
                     <div class="mb-4">
 
                         <div class="contenedor servicio-card"
@@ -152,21 +152,22 @@
 
             <?php } ?>
         </div>
-        <div class="testimonio mb-5 p-2">
+        <div class="testimonio mb-5 p-2 animar">
             <h3 class="titulo text-center"><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
             <br>
             <div class="row">
                 <div class="col-md-12">
+                    <?php foreach($testamento as $i){ ?>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <p class="text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                                    <?php echo $i['descripcion'] ?>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
                 <!-- <div class="col-md-6">
                     <p class="text-center">
@@ -176,10 +177,10 @@
                 </div> -->
             </div>
         </div>
-        <div class="row">
+        <div class="row animar">
             <div class="col-md-6">
                 <br><br><br>
-                <img src="../img/logoSpa.png" class="PrimeraImg" alt="">
+                <img src="../img/logoSpa.png" class="PrimeraImgRe" alt="">
             </div>
             <div class="col-md-6">
                 

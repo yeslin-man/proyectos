@@ -76,7 +76,7 @@
                     <!-- <div class="card"> -->
                         
                         <!-- <div class="card-body"> -->
-                        <form class="contenedorX" id="frmAgendaC">
+                        <form class="contenedorX" id="frmPublic" enctype="multipart/form-data">
                             <?php if(!isset($_REQUEST['operacion'])){ ?>
                                 <p class="text-center">
                                     ¡Bienvenido! <br><br>
@@ -87,22 +87,30 @@
 
                             <h2 class="text-capitalize"><?php if(isset($_REQUEST['operacion'])){echo $_REQUEST['operacion'];} ?></h2>
 
+                            <input type="hidden" name="opcion" id="opcion" value="<?php echo $_REQUEST['operacion'] ?>" required>
+                            <?php if(isset($_REQUEST['operacion']) && $_REQUEST['operacion'] == 'testimonio'){ ?>
+                            <div class="grupo">
+                                <input type="text" name="titulo" id="titulo" value="null">
+                            </div>
+                            <?php }else{ ?>
                             <div class="grupo">
                                 <input type="text" name="titulo" id="titulo" required>
                                 <label>Titulo</label>
                             </div>
-
+                            <?php } ?>
                             <div class="grupo">
                                 <textarea name="descripcion" id="descripcion"></textarea>
                                 <label>Descripcion</label>
                             </div>
-                            <?php if(isset($_REQUEST['operacion']) && $_REQUEST['operacion'] == 'testimonio'){ }else{ ?>
+                            <?php if(isset($_REQUEST['operacion']) && $_REQUEST['operacion'] == 'testimonio'){ ?> 
+                                <input type="hidden" name="foto" id="foto" value="null">
+                            <?php }else{ ?>
                             <div class="grupo">
                                 <input type="file" name="foto" id="foto">
                                 <label>Seleciona Imagenes</label>
                             </div>
                             <?php } ?>
-                            <button id="botonAg" class="btn text-white botonCita">Publicar</button>
+                            <button id="botonP" class="btn text-white botonCita">Publicar</button>
 
                             <?php } ?>
                         </form>
@@ -119,6 +127,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/guardarC.js"></script>
+    <script src="js/guardarPubli.js"></script>
     <script src="js/filtro.js"></script>
 </body>
 </html>
