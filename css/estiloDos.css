@@ -960,16 +960,76 @@ tbody tr:hover{
 
 
 .circular{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-position: center;
     filter: contrast(110%) brightness(105%);
+    mask-image: linear-gradient(#fff 70%, transparent);
     transition: all 1.5s;
     /* object-fit: cover; */
 }
-.circular:hover{
+/* .circular:hover{
     border-radius: 20px;
     transition: all 1.5s;
+} */
+
+/* carrucel */
+
+.slider-track{
+    display: flex;
+    animation: carrusel 45s infinite;
 }
+
+.slide{
+    min-width: 100%;
+}
+
+@keyframes carrusel{
+    0%,20%{
+        transform: translateX(0%);
+    }
+    25%,45%{
+        transform: translateX(-100%);
+    }
+    50%,70%{
+        transform: translateX(-200%);
+    }
+    75%,100%{
+        transform: translateX(-300%);
+    }
+}
+
+/* .slider-box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track{
+    display: flex;
+    width: max-content;
+    animation: mover 20s linear infinite;
+}
+
+.slide{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+} */
+
+
+/* fin carrucel */
 
 /* RESPONSIVE */
 @media(max-width:768px){

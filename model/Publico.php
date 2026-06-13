@@ -16,7 +16,7 @@ $spaR = $conectar->prepare($spa);
 $spaR->execute();
 $spaK = $spaR->fetch(PDO::FETCH_ASSOC);
 
-$testa = "SELECT * FROM publicaciones WHERE opcion = 'testimonio' LIMIT 1";
+$testa = "SELECT * FROM publicaciones WHERE opcion = 'testimonio' LIMIT 8";
 $testam = $conectar->prepare($testa);
 $testam->execute();
 $testamento = $testam->fetchAll(PDO::FETCH_ASSOC);

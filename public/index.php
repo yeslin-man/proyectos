@@ -165,19 +165,21 @@
                             <div class="text-center">
                                 
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="owl-carousel testimonial-carousel">
-                                    <?php 
-                                        foreach ($testamento as $i) {
-                                    ?>
-                                        <div class="text-center">
-                                            <h4 class="font-weight-normal mb-4"><?php echo $i['descripcion'] ?></h4>
+                            <!-- <div class="row justify-content-center">
+                                <div class="col-lg-12"> -->
+                                    <div class="slider-box">
+                                        <div class="slider-track">
+                                            <?php foreach ($testamento as $i) { ?>
+                                                <div class="slide text-center">
+                                                    <h4 class="font-weight-normal mb-4">
+                                                        <?php echo $i['descripcion']; ?>
+                                                    </h4>
+                                                </div>
+                                            <?php } ?>
                                         </div>
-                                    <?php } ?>
                                     </div>
-                                </div>
-                            </div>
+                                <!-- </div>
+                            </div> -->
                         </div>
                     </div>
 
