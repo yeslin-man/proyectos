@@ -53,10 +53,12 @@
                                     $fin = strtotime("8:00 PM"); 
                                 ?>
                                 <select name="hora" id="hora">
+                                    <option>Seleccione la hora</option>
                                     <?php while($inicio <= $fin){ ?>
                                         <option value="<?php echo date("h:i A", $inicio)."<br>" ?>"><?php echo date("h:i A", $inicio)."<br>" ?></option>
                                     <?php $inicio = strtotime("+1 hour", $inicio);  } ?>
                                 </select>
+                                <div id="resultado"></div>
                                 <!-- <input type="hora" name="hora" id="hora" required>
                                 <label>Hora</label> -->
                             </div>
@@ -94,5 +96,6 @@
     <script src="../js/filtroDos.js"></script>
     <script src="../js/filtroB.js"></script>
     <script src="../js/guardarB.js"></script>
+    <script src="../js/change.js"></script>
 </body>
 </html>

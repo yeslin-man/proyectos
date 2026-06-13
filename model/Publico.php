@@ -11,7 +11,7 @@ $eventoR->execute();
 $agendasR = $eventoR->fetch(PDO::FETCH_ASSOC);
 
 
-$spa = "SELECT * FROM publicaciones WHERE opcion = 'spa' LIMIT 1";
+$spa = "SELECT * FROM publicaciones WHERE opcion = 'spa' ORDER BY id_publi DESC LIMIT 1";
 $spaR = $conectar->prepare($spa);
 $spaR->execute();
 $spaK = $spaR->fetch(PDO::FETCH_ASSOC);

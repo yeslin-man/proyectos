@@ -11,7 +11,15 @@
 </head>
 <body class="bodyIndex">
 
-    <div class="container">
+<div id="splash">
+    <div class="bodys">
+        <img src="img/logoSpa.png" alt="Logo Empresa" class="img">
+    </div>
+    
+</div>
+
+
+    <div class="container" id="contenido">
         <div class="d-flex justify-content-center">
             <div class="col-md-6">
                 <div class="card mt-3 mb-3 shadow-lg bg-body-tertiary rounded">
@@ -95,5 +103,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

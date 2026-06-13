@@ -205,6 +205,29 @@ th{
     display: none;
 }
 
+.bodys {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        /*background-color: #1E3A8A;*/
+    /*background: #fff000;*/
+}
+.img{
+    width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem goldenrod);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to   { opacity: 1; transform: scale(1); }
+}
+#contenido{
+    display: none;
+}
+
+
 /* Celulares */
 @media (max-width: 576px) {
     .mover{

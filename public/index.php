@@ -161,25 +161,25 @@
                     <!-- carrucel -->
 
                     <div class="container-fluid">
-        <div class="container">
-            <div class="text-center">
-                
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                    <?php 
-                      foreach ($testamento as $i) {
-                    ?>
-                        <div class="text-center">
-                            <h4 class="font-weight-normal mb-4"><?php echo $i['descripcion'] ?></h4>
+                        <div class="container">
+                            <div class="text-center">
+                                
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="owl-carousel testimonial-carousel">
+                                    <?php 
+                                        foreach ($testamento as $i) {
+                                    ?>
+                                        <div class="text-center">
+                                            <h4 class="font-weight-normal mb-4"><?php echo $i['descripcion'] ?></h4>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <?php } ?>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
                     <!-- fin carrucel -->
                 </div>
