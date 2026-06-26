@@ -1,0 +1,34 @@
+:root{
+    --letra: Arial, Helvetica, sans-serif;
+}
+
+.imagenReserva{
+    width: 80px;
+}
+.titulo{
+    font-family: var(--letra);
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+}
+.precioRe{
+    font-family: var(--letra);
+    color: gray;
+    font-size: 14px;
+}
+.tarjeta{
+    cursor: pointer;
+}
+#servicio, #empleado {
+    display: none;
+}
+.accionUno{
+    font-family: var(--letra);
+    color: black;
+    margin-bottom: 10px;
+}
+
+.resumen{
+    font-family: var(--letra);
+    font-size: 14px;
+}

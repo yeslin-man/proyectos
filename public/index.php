@@ -130,7 +130,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="../img/<?php echo $i['foto'] ?>" class="marte" alt="">
+                                <img src="../img/<?php echo $i['foto'] ?>" class="marte imagen_marte" alt="">
                             </div>
                             <div class="col-md-8">
                                 <div class="mt-3">
@@ -142,7 +142,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="servicios.php" class="btn btn-primary">Más Servicios</a>
+                        <a href="servicios.php?accion=Servicios" class="btn btn-primary">Más Servicios</a>
                     </div>
                     </div>
                 </div>
@@ -153,6 +153,7 @@
 
             <?php } ?>
         </div>
+        
         <div class="testimonio mb-5 p-2 animar">
             <h3 class="titulo text-center"><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
             <br>
@@ -241,7 +242,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
 
