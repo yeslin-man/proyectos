@@ -153,8 +153,155 @@
 
             <?php } ?>
         </div>
+
+        <div class="mb-5 p-2 animar">
+            <h3 class="titulo text-start"><i class="fa-solid fa-leaf"></i> <b>Compromiso con la excelencia </b></h3>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- carrucel -->
+
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card shadow-none rounded lateral">
+                                        <img src="../img/bienestar.png" alt="" class="imagenDos">
+                                        <div class="card p-3 text-center">
+                                            <h5 class="titulo">Enfoque de bienestar</h5>
+                                            <hr>
+                                            <br>
+                                            <p class="parrafo">
+                                               ✔️ Tu bienestar es nuestra prioridad
+                                               <br><br>
+                                                ✔️ Dedicados a tu cuidado
+                                                <br><br>
+                                                ✔️ Cuidamos de ti con excelencia
+                                                <br><br>
+                                                ✔️ Una experiencia diseñada para ti
+                                                <br><br>
+                                                ✔️ Bienestar con calidad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card shadow-lg bg-body rounded carta_proce">
+                                        <img src="../img/profesionalDos.jpg" alt="" class="imagenDos">
+                                        <div class="card-body p-3">
+                                            <h5 class="titulo">Enfoque profesional</h5>
+                                            <hr>
+                                            <br>
+                                            <p class="parrafo">
+                                                ✔️ Calidad en cada servicio
+                                                <br><br>
+                                                ✔️ Excelencia en cada detalle
+                                                <br><br>
+                                                ✔️ Nuestro compromiso contigo
+                                                <br><br>
+                                                ✔️ Experiencias que marcan la diferencia
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <div class="card shadow-none rounded lateral">
+                                        <img src="../img/imageDos.png" alt="" class="imagenDos">
+                                        <div class="card-body p-3">
+                                            <h5 class="titulo">Enfoque de confianza</h5>
+                                            <hr>
+                                            <br>
+                                            <p class="parrafo">
+                                                ✔️ Atención que inspira confianza
+                                                <br><br>
+                                                ✔️ Comprometidos con tu satisfacción
+                                                <br><br>
+                                                ✔️ Servicio con calidad y dedicación
+                                                <br><br>
+                                                ✔️ El cuidado que mereces
+                                                <br><br>
+                                                ✔️ Profesionalismo que se nota
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- fin carrucel -->
+                </div>
+                <!-- <div class="col-md-6">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+
+        <div class="mb-5 p-2 animar">
+            <h3 class="titulo text-start"><i class="fa-solid fa-leaf"></i> <b>¿Por qué elegirnos Karime Spa? </b></h3>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- carrucel -->
+
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="colorTransparent">
+                                <h5 class="titulo">1. Atención personalizada</h5>
+                                <p class="parrafo">
+                                    En Karime Spa cada cliente recibe una atención adaptada a sus necesidades, ofreciendo tratamientos personalizados para garantizar los mejores resultados.
+                                </p>
+                            </div>
+                            <div class="colorTransparent">
+                                <h5 class="titulo">2. Profesionales capacitados</h5>
+                                <p class="parrafo">
+                                    Contamos con personal altamente calificado y en constante actualización, brindando confianza, seguridad y un servicio de excelente calidad.
+                                </p>
+                            </div>
+                            <div class="colorTransparent">
+                                <h5 class="titulo">3. Ambiente cómodo y relajante</h5>
+                                <p class="parrafo">
+                                    Nuestras instalaciones están diseñadas para ofrecer un espacio tranquilo, limpio y acogedor, ideal para desconectarse del estrés y disfrutar de una experiencia única.
+                                </p>
+                            </div>
+                            <div class="colorTransparent">
+                                <h5 class="titulo">4. Productos y equipos de calidad</h5>
+                                <p class="parrafo">
+                                    Trabajamos con productos de alta calidad y equipos modernos que ayudan a obtener resultados efectivos mientras cuidamos la salud y el bienestar de nuestros clientes.
+                                </p>
+                            </div>
+                            <div class="colorTransparent">
+                                <h5 class="titulo">5. Compromiso con la satisfacción del cliente</h5>
+                                <p class="parrafo">
+                                    Nuestro objetivo es que cada persona salga satisfecha, renovada y con ganas de regresar, gracias a un servicio amable, puntual y orientado a superar las expectativas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fin carrucel -->
+                </div>
+                <!-- <div class="col-md-6">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+
         
-        <div class="testimonio mb-5 p-2 animar">
+        <div class="testimonio mb-3 p-2 animar">
             <h3 class="titulo text-center"><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
             <br>
             <div class="row">
@@ -171,7 +318,7 @@
                                     <div class="slider-box">
                                         <div class="slider-track">
                                             <?php foreach ($testamento as $i) { ?>
-                                                <div class="slide text-center">
+                                                <div class="slide text-center encoger">
                                                     <h4 class="font-weight-normal mb-4">
                                                         <?php echo $i['descripcion']; ?>
                                                     </h4>
@@ -194,6 +341,7 @@
                 </div> -->
             </div>
         </div>
+
         <div class="row animar">
             <div class="col-md-6">
                 <br><br><br>

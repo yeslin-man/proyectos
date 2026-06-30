@@ -26,9 +26,9 @@
         <li class="nav-item">
           <a class="nav-link" href="cita.php"><i class="fa-solid fa-calendar"></i> Cita</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href=""><i class="fa-solid fa-calendar"></i> Testimonio</a>
-        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="testimonio.php"><i class="fa-solid fa-comment"></i> Testimonio</a>
+        </li>
         
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

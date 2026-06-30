@@ -20,6 +20,11 @@ $testa = "SELECT * FROM publicaciones WHERE opcion = 'testimonio' LIMIT 8";
 $testam = $conectar->prepare($testa);
 $testam->execute();
 $testamento = $testam->fetchAll(PDO::FETCH_ASSOC);
+
+$testimo = "SELECT * FROM publicaciones WHERE opcion = 'testimonio'";
+$testimonio = $conectar->prepare($testimo);
+$testimonio->execute();
+$testimonios = $testimonio->fetchAll(PDO::FETCH_ASSOC);
 //  echo json_encode($usuarios);
 
 ?>

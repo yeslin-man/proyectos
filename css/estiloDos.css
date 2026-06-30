@@ -219,6 +219,7 @@ nav li{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 900;
+    text-transform: uppercase;
 }
 .parrafo{
     font-family: Arial, Helvetica, sans-serif;
@@ -998,6 +999,116 @@ tbody tr:hover{
     }
 }
 
+.colorTransparent{
+    border: 1px solid #000;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    border-left: 10px solid #2563eb;
+    border-top-left-radius: 20px;
+    margin-bottom: 20px;
+
+    transition: all 1.5s;
+}
+.colorTransparent:hover{
+    box-shadow: none;
+    transition: all 1.5s;
+}
+
+.imagenDos{
+    width: 100%;
+    height: 450px;
+    object-fit: fill;
+}
+
+.carta_proce{
+     box-shadow:
+        0 10px 20px rgba(0,0,0,.15),
+        0 20px 40px rgba(0,0,0,.12);
+        transition: all 1.5s;
+}
+.carta_proce:hover{
+    transform:translateY(-10px);
+    box-shadow:
+        0 20px 30px rgba(0,0,0,.2),
+        0 35px 60px rgba(0,0,0,.15);
+        transition: all 1.5s;
+}
+
+.lateral{
+    transition: all 1.5s;
+}
+.lateral:hover{
+     transform:translateY(-10px);
+     transition: all 1.5s;
+}
+
+.encoger{
+    width: 100%; 
+    
+    text-align: center;
+}
+
+.encoger h4{
+    width: 900px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+
+.borde{
+
+    position: relative;
+    /* width: 300px; */
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        135deg,
+        #f5b6c8,
+        #e89ab3
+    );
+    /* background: #4CAF50; */
+    color: white;
+    border-end-end-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    margin-bottom: 20px;
+
+     overflow-wrap: break-word;
+
+     filter: drop-shadow(0 0 0.25rem #000);
+}
+
+.borde::before{
+    content: "";
+    position: absolute;
+
+    /* Posición de la flecha */
+    left: -14px;
+    top: 0;
+
+    width: 10px;
+    height: 10px;
+
+    border-top: 1px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid 
+        #f5b6c8;
+        /* #e89ab3 */
+    /* border-right: 15px solid #4CAF50; */
+}
+
+
+
+.avatar{
+    margin-top: -15px;
+    text-align: end;
+}
+
+
+
+
 
 /* .slider-box{
     width: 100%;
@@ -1046,4 +1157,13 @@ tbody tr:hover{
     .parrafoC{
         font-size: .85rem;
     }
+
+    .avatar{
+        text-align: start;
+    }
+
+    /* .texto_encoger{
+        width: 100%;
+    } */
+
 }

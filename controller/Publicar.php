@@ -4,6 +4,7 @@ $operacion = $_REQUEST['operacion'];
 
     switch ($operacion) {
         case 'GuardarPublic':guardarP();break;
+        case 'GuardarPublico':guardarPu();break;
     }
 
     // funcion para insertar
@@ -45,6 +46,32 @@ $operacion = $_REQUEST['operacion'];
 
             echo 'ok';
         }
+    }
+
+
+    function guardarPu(){
+
+        require_once '../db/Conexion.php';
+            $con = new Conexion();
+            $conectar = $con->conectar();
+
+        $titulo = "null";
+        $descripcion = $_REQUEST['descripcion'];
+        $destino = "null";
+        $opcion = "testimonio";
+        
+            $sql = $conectar->prepare("INSERT INTO publicaciones (id_publi,titulo,descripcion,foto,opcion) 
+                                        VALUES (null,:titulo,:descripcion,:foto,:opcion)");
+            $sql->bindParam(':titulo', $titulo);
+            $sql->bindParam(':descripcion', $descripcion);
+            $sql->bindParam(':foto', $destino);
+            $sql->bindParam(':opcion', $opcion);
+            // move_uploaded_file($origen, $destino);
+            $sql->execute();
+
+            echo 'ok';
+
+        
     }
 
 ?>
