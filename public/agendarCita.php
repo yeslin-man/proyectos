@@ -31,7 +31,7 @@
                     <!-- <div class="card-body"> -->
                         <form class="contenedorX" id="frmAgendaC">
 
-                            <h2><a href="servicios.php?accion=Servicios" class="text-decoration-none" title="Ir a servicios">⬅</a> Formulario de citas</h2>
+                            <h2><a href="servicios.php?accion=Servicios" class="text-decoration-none" title="Ir a servicios">⬅</a> Agendamiento de citas</h2>
 
                             <div class="grupo">
                                 <input type="text" name="cliente" id="cliente" required>
@@ -71,7 +71,7 @@
                                 <label>Sucursal</label>
                             </div>
 
-                            <button id="botonAg" class="btn text-white botonCita">Separa Cita</button>
+                            <button id="botonAg" class="btn text-white botonCita">Agendar Cita</button>
 
                         </form>
                         <br><br>

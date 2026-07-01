@@ -50,14 +50,15 @@ $operacion = $_REQUEST['operacion'];
 
 
     function guardarPu(){
-
+        // print_r($_SERVER['REMOTE_ADDR']);
         require_once '../db/Conexion.php';
             $con = new Conexion();
             $conectar = $con->conectar();
 
-        $titulo = "null";
+        $titulo = $_REQUEST['titulo'];
         $descripcion = $_REQUEST['descripcion'];
         $destino = "null";
+        // $destino = md5($_SERVER['REMOTE_ADDR']);
         $opcion = "testimonio";
         
             $sql = $conectar->prepare("INSERT INTO publicaciones (id_publi,titulo,descripcion,foto,opcion) 

@@ -3,6 +3,7 @@ botonU.addEventListener('click', function(e){
     e.preventDefault();
     const frmAgenda = document.getElementById('frmPublic');
     // Validación básica de campos vacíos    
+    let titulo = document.getElementById('titulo').value.trim();
     let descripcion = document.getElementById('descripcion').value.trim();
     if (descripcion === "") {
       Swal.fire({
