@@ -32,19 +32,57 @@ $operacion = $_REQUEST['operacion'];
             echo 'ok';
 
         }else{
-            $destino = '../imagen/'. $_FILES['foto']['name'];
-            $origen = $_FILES['foto']['tmp_name'];
 
-            $sql = $conectar->prepare("INSERT INTO publicaciones (id_publi,titulo,descripcion,foto,opcion) 
-                                        VALUES (null,:titulo,:descripcion,:foto,:opcion)");
+            $rutas = [];
+
+            foreach ($_FILES['foto']['name'] as $i => $nombreImagen) {
+
+                if ($_FILES['foto']['error'][$i] == 0) {
+
+                    $destino = "../imagen/" . basename($nombreImagen);
+                    $origen = $_FILES['foto']['tmp_name'][$i];
+
+                    if (move_uploaded_file($origen, $destino)) {
+                        $rutas[] = $destino;
+                    }
+                }
+            }
+
+            // Convertir el arreglo en una sola cadena
+            $fotos = implode('|', $rutas);
+
+            $sql = $conectar->prepare("INSERT INTO publicaciones
+            (id_publi, titulo, descripcion, foto, opcion)
+            VALUES (NULL, :titulo, :descripcion, :foto, :opcion)");
+
             $sql->bindParam(':titulo', $titulo);
             $sql->bindParam(':descripcion', $descripcion);
-            $sql->bindParam(':foto', $destino);
+            $sql->bindParam(':foto', $fotos);
             $sql->bindParam(':opcion', $opcion);
-            move_uploaded_file($origen, $destino);
+
             $sql->execute();
 
-            echo 'ok';
+            echo "ok";
+
+
+
+
+            // foreach ($_FILES['foto']['name'] as $i => $foto) {
+
+            //     $destino = '../imagen/'. $_FILES['foto']['name'][$i];
+            //     $origen = $_FILES['foto']['tmp_name'][$i];
+
+            //     $sql = $conectar->prepare("INSERT INTO publicaciones (id_publi,titulo,descripcion,foto,opcion) 
+            //                                 VALUES (null,:titulo,:descripcion,:foto,:opcion)");
+            //     $sql->bindParam(':titulo', $titulo);
+            //     $sql->bindParam(':descripcion', $descripcion);
+            //     $sql->bindParam(':foto', $destino);
+            //     $sql->bindParam(':opcion', $opcion);
+            //     move_uploaded_file($origen, $destino);
+            //     $sql->execute();
+            // }
+
+            // echo 'ok';
         }
     }
 

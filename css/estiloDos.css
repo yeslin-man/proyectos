@@ -1196,6 +1196,7 @@ tbody tr:hover{
 
     .slider-box{
         width: 100%;
+        /* height: auto; */
         overflow: hidden;
     }
 
@@ -1210,6 +1211,10 @@ tbody tr:hover{
     overflow-wrap:break-word;
     }
 
+    .encoger{
+        text-align: start;
+        /* height: auto; */
+    }
 
 }
 

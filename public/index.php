@@ -41,12 +41,22 @@
             </div>
             <div class="col-md-4">
                 <div class="row">
+                    <?php
+                        $imagenes = explode('|', $agendasR['foto']);
+                        // echo "<pre>";
+                        // print_r($imagenes);
+                        // echo "</pre>";
+                        // foreach($imagenes as $imagen){
+                    ?>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <img src="<?php echo $agendasR['foto'] ?>" class="PrimeraImg" alt="">
+                        <!-- <img src="<?php //echo $agendasR['foto'] ?>" class="PrimeraImg" alt=""> -->
+                        <img src="<?= $imagenes[0] ?>" class="PrimeraImg" alt="">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
-                        <img src="<?php echo $agendasR['foto'] ?>" class="PrimeraImg imagen_uno" alt="">
+                        <img src="<?= $imagenes[1] ?>" class="PrimeraImg imagen_uno" alt="">
+                        <!-- <img src="<?php //echo $agendasR['foto'] ?>" class="PrimeraImg imagen_uno" alt=""> -->
                     </div>
+                    <?php //} ?>
                 </div>
             </div>
         </div>
@@ -154,7 +164,7 @@
             <?php } ?>
         </div>
 
-        <div class="mb-5 p-2 ">
+        <div class="mb-3 p-2 ">
             <h3 class="titulo text-start mb-2"><i class="fa-solid fa-leaf"></i> <b>Compromiso con la excelencia </b></h3>
             
             <div class="row">
@@ -302,47 +312,24 @@
         </div>
 
         
-        <div class="testimonio mb-3 p-2 animar">
-            <h3 class="titulo text-center"><i class="fa-solid fa-leaf"></i> <b>Testimonio</b></h3>
-            <br>
-            <!-- <div class="row"> -->
-                <!-- <div class="col-md-12"> -->
-                    <!-- carrucel -->
-
-                    <!-- <div class="container-fluid"> -->
-                        <!-- <div class="container"> -->
-                            <!-- <div class="row justify-content-center">
-                                <div class="col-lg-12"> -->
-                                    <div class="slider-box">
-                                        <div class="slider-track">
-                                            <?php foreach ($testamento as $i) { ?>
-                                                <div class="slide text-center encoger">
-                                                    <!-- <h4 class="font-weight-normal mb-4"> -->
-                                                        <?php echo $i['descripcion']; ?>
-                                                    <!-- </h4> -->
-                                                </div>
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-                                <!-- </div>
-                            </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-
-                    <!-- fin carrucel -->
-                <!-- </div> -->
-                <!-- <div class="col-md-6">
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus labore adipisci obcaecati alias minus vitae delectus sed praesentium perspiciatis, molestiae temporibus assumenda numquam id dolorem dicta quasi blanditiis laboriosam illo.
-                    </p>
-                </div> -->
-            <!-- </div> -->
+        <div class="testimonio p-2 animar">
+            <h3 class="titulo text-center mb-3"><i class="fa-solid fa-leaf"></i> <b>Testimonios</b></h3>
+            <div class="slider-box">
+                <div class="slider-track">
+                    <?php foreach ($testamento as $i) { ?>
+                        <div class="slide encoger">
+                            <!-- <h4 class="font-weight-normal mb-4"> -->
+                                <?php echo $i['descripcion']; ?>
+                            <!-- </h4> -->
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
         </div>
 
         <div class="row contactar animar">
             <div class="col-md-6">
-                <br><br><br>
+                <br>
                 <img src="../img/logoSpa.png" class="PrimeraImgRe" alt="">
             </div>
             <div class="col-md-6">

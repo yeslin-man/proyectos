@@ -106,7 +106,7 @@
                                 <input type="hidden" name="foto" id="foto" value="null">
                             <?php }else{ ?>
                             <div class="grupo">
-                                <input type="file" name="foto" id="foto">
+                                <input type="file" name="foto[]" id="foto" multiple>
                                 <label>Seleciona Imagenes</label>
                             </div>
                             <?php } ?>

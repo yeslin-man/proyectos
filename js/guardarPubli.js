@@ -47,7 +47,7 @@ botonU.addEventListener('click', function(e){
         }else{
            Swal.fire({
                 title: "Algo salio mal",
-                text: "Datos Guardados",
+                text: "Error",
                 icon: "error"
               }).then((result) => {
                 if (result.isConfirmed) {
